@@ -60,9 +60,38 @@
                             <input type="text" id="company" name="company" placeholder="TechCorp Inc.">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Work Email</label>
-                        <input type="email" id="email" name="email" placeholder="jane@techcorp.com" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Work Email</label>
+                            <input type="email" id="email" name="email" placeholder="jane@techcorp.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" name="project-type" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="web-app">Web Application</option>
+                                <option value="custom-software">Custom Software</option>
+                                <option value="ml-ai">Machine Learning & AI</option>
+                                <option value="consulting">Technical Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Estimated Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="under-10k">Under $10k</option>
+                                <option value="10k-50k">$10k - $50k</option>
+                                <option value="50k-100k">$50k - $100k</option>
+                                <option value="over-100k">$100k+</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="message">Project Details</label>
