@@ -8,13 +8,15 @@
 </head>
 <body>
     <header>
-        <img src="assets/images/Screenshot 2025-03-11 193611_LE_upscale_balanced_x4.jpg" alt="Muonde Agency Logo" class="logo">
-        <h1>Muonde Agency</h1>
+        <a href="index.html" class="logo-container">
+            <img src="assets/images/Muonde A.jpg" alt="Muonde Agency Logo" class="logo">
+            <h1>Muonde Agency</h1>
+        </a>
         <nav>
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
     <main>
@@ -37,15 +39,25 @@
                 <p>We help you build a strong brand identity and craft strategies that align with your goals.</p>
             </div>
         </section>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit" class="cta-button">Send Message →</button>
-        </form>
+        <section class="contact-section" style="padding: 4rem 5%;">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">Let's Talk</h2>
+            <p style="text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">Ready to grow your brand? Fill out the form below and we'll get back to you shortly.</p>
+            <form id="contact-form">
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="submit" class="cta-button" style="justify-content: center;">Send Message →</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>Muonde Agency – Growing Brands, Rooted in Results.</p>
