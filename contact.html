@@ -27,22 +27,50 @@
             </div>
         </section>
 
-        <section class="contact-section reveal-on-scroll" style="padding: 4rem 5%;">
-            <form id="contact-form">
-                <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
-                    <label for="name">Name / Company</label>
-                    <input type="text" id="name" name="name" placeholder="E.g. Jane Doe, TechCorp Inc." required>
+        <section class="contact-section reveal-on-scroll">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Whether you need a full-scale enterprise software solution, a high-performance web platform, or predictive AI models, our engineering team is ready to help.</p>
+                    
+                    <div class="info-block">
+                        <h4>Email</h4>
+                        <a href="mailto:hello@muondeagency.com">hello@muondeagency.com</a>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h4>Phone</h4>
+                        <p>+263 77 123 4567</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h4>Location</h4>
+                        <p>Harare, Zimbabwe</p>
+                    </div>
                 </div>
-                <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
-                    <label for="email">Work Email</label>
-                    <input type="email" id="email" name="email" placeholder="jane@techcorp.com" required>
-                </div>
-                <div class="form-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
-                    <label for="message">Project Details</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tell us about the software or AI solution you want to build..." required></textarea>
-                </div>
-                <button type="submit" class="cta-button" style="justify-content: center; width: 100%; border: none; cursor: pointer;">Initialize Project →</button>
-            </form>
+
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="TechCorp Inc.">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" name="email" placeholder="jane@techcorp.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about the software or AI solution you need to build..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Submit Request →</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
