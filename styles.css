@@ -92,8 +92,10 @@ nav a:hover, nav a.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 5%;
-    background-color: #050505; /* Deep, premium black */
+    padding: 2rem 5%;
+    background: linear-gradient(rgba(5, 5, 5, 0.7), rgba(5, 5, 5, 0.7)), url('assets/images/Muondetech.png');
+    background-size: cover;
+    background-position: center;
     position: relative;
     overflow: hidden;
 }
