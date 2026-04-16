@@ -496,3 +496,148 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ── Dynamic Form Fields ── */
+.dynamic-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+    margin-bottom: 0;
+    pointer-events: none;
+}
+
+.dynamic-fields.visible {
+    max-height: 600px;
+    opacity: 1;
+    pointer-events: all;
+    margin-bottom: 0.5rem;
+}
+
+.dynamic-fields.hidden {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Form Section Labels */
+.form-section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    position: relative;
+}
+
+/* Success State */
+.form-success {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 4rem 3rem;
+    text-align: center;
+    animation: fadeIn 0.6s ease-out;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.form-success.hidden {
+    display: none;
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    animation: bounceIn 0.8s ease-out;
+}
+
+.form-success h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.form-success p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+/* Trust Badges */
+.trust-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+}
+
+.badge {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.badge:hover {
+    border-color: var(--secondary);
+    color: var(--text-main);
+}
+
+/* Submit Button Loading */
+.submit-btn {
+    width: 100%;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.2rem;
+    margin-top: 0.5rem;
+    position: relative;
+    transition: var(--transition);
+}
+
+.submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Form Note */
+.form-note {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+}
+
+/* Bounce animation for success icon */
+@keyframes bounceIn {
+    0%   { transform: scale(0.3); opacity: 0; }
+    50%  { transform: scale(1.1); opacity: 1; }
+    70%  { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+@keyframes breatheGlow {
+    0%   { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 1;   transform: translate(-50%, -50%) scale(1.2); }
+}
