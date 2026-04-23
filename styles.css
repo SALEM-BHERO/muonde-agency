@@ -641,3 +641,319 @@ footer {
     0%   { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
     100% { opacity: 1;   transform: translate(-50%, -50%) scale(1.2); }
 }
+/* ── Home Blog Section ── */
+.home-blog {
+    padding: 8rem 5%;
+    background: linear-gradient(to bottom, transparent, rgba(99, 102, 241, 0.05));
+}
+
+.home-blog h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+/* ── Blog Section ── */
+.blog-container {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-controls {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.search-wrapper {
+    width: 100%;
+    max-width: 500px;
+}
+
+#blog-search {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: 99px;
+    color: var(--text-main);
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+#blog-search:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+.category-filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cat-btn {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    padding: 0.6rem 1.5rem;
+    border-radius: 99px;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.cat-btn:hover, .cat-btn.active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+/* Featured Card */
+.featured-card {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background: var(--bg-card);
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-bottom: 4rem;
+}
+
+.featured-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary);
+    border-radius: 99px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    width: fit-content;
+}
+
+.featured-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.featured-content p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Posts Grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.post-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.post-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+}
+
+.post-image {
+    height: 240px;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.post-card:hover .post-image img {
+    transform: scale(1.05);
+}
+
+.post-info {
+    padding: 2rem;
+}
+
+.post-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.post-info p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--glass-border);
+    padding-top: 1rem;
+}
+
+/* Newsletter */
+.newsletter {
+    padding: 6rem 5%;
+}
+
+.newsletter-card {
+    background: linear-gradient(135deg, var(--bg-card), #1e1b4b);
+    padding: 4rem;
+    border-radius: 32px;
+    text-align: center;
+    border: 1px solid var(--glass-border);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter-card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-card p {
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+#newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#newsletter-form input {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 1rem 1.5rem;
+    border-radius: 99px;
+    color: #fff;
+}
+
+/* ── Blog Post Content ── */
+.blog-post-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 8rem 5% 4rem;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.post-header h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.1;
+    margin: 1.5rem 0 2rem;
+}
+
+.post-meta-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-muted);
+}
+
+.post-hero-image {
+    width: 100%;
+    height: 500px;
+    border-radius: 32px;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.post-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-body {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+.post-body p {
+    margin-bottom: 2rem;
+}
+
+.related-posts {
+    margin-top: 6rem;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 4rem;
+}
+
+.related-posts h2 {
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 992px) {
+    .featured-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .featured-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    #newsletter-form {
+        flex-direction: column;
+    }
+    
+    .post-hero-image {
+        height: 300px;
+    }
+}

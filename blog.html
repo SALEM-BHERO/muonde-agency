@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Muonde Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-container">
+            <h1>Muonde Tech</h1>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-header-content">
+                <h2>Insights & Innovation</h2>
+                <p>Exploring the intersection of technology, design, and business growth.</p>
+                
+                <div class="blog-controls">
+                    <div class="search-wrapper">
+                        <input type="text" id="blog-search" placeholder="Search articles...">
+                    </div>
+                    <div class="category-filters">
+                        <button class="cat-btn active" data-category="all">All</button>
+                        <button class="cat-btn" data-category="Technology">Technology</button>
+                        <button class="cat-btn" data-category="Business">Business</button>
+                        <button class="cat-btn" data-category="Design">Design</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-container">
+            <div id="featured-post">
+                <!-- Featured post will be loaded here -->
+            </div>
+
+            <div id="posts-grid" class="posts-grid">
+                <!-- Posts will be loaded here -->
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-card">
+                <h3>Stay Updated</h3>
+                <p>Get the latest insights on tech and growth strategies delivered to your inbox.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="cta-button">Subscribe →</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Muonde Tech – Growing Brands, Rooted in Results.</p>
+        <div class="social-links">
+            <a href="https://wa.me/263782786864" target="_blank">WhatsApp</a>
+            <a href="https://facebook.com/yourpage" target="_blank">Facebook</a>
+            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/yourcompany" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/yourhandle" target="_blank">Twitter/X</a>
+        </div>
+        <p>&copy; 2024 Muonde Tech. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>

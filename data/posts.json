@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "title": "The Future of AI in Web Development",
+        "excerpt": "Discover how artificial intelligence is transforming the way we build and interact with the web.",
+        "content": "Artificial Intelligence is no longer just a buzzword; it's a fundamental shift in how we approach development. From AI-assisted coding to personalized user experiences, the landscape is changing rapidly.\n\nIn this post, we explore the key trends that every developer and business owner should watch out for in 2024 and beyond...",
+        "category": "Technology",
+        "author": "Muonde Tech Team",
+        "date": "April 20, 2024",
+        "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1200",
+        "readTime": "5 min read"
+    },
+    {
+        "id": "2",
+        "title": "Scaling Your Startup: A Technical Perspective",
+        "excerpt": "Learn the best practices for building scalable architecture that can handle rapid growth.",
+        "content": "Scalability is often an afterthought, but it should be at the core of your technical strategy from day one. Whether it's choosing the right database or implementing microservices, every decision matters.\n\nWe break down the architectural patterns that helped our clients scale to thousands of daily users...",
+        "category": "Business",
+        "author": "Muonde Tech Team",
+        "date": "April 18, 2024",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
+        "readTime": "7 min read"
+    },
+    {
+        "id": "3",
+        "title": "Modern UI/UX Trends for 2024",
+        "excerpt": "A deep dive into glassmorphism, bento layouts, and immersive animations.",
+        "content": "Design is evolving towards more immersive and interactive experiences. Glassmorphism continues to dominate, providing a sleek, modern look that feels premium and light.\n\nCombined with bento-style layouts and smooth animations, these trends are defining the next generation of digital interfaces.",
+        "category": "Design",
+        "author": "Muonde Tech Team",
+        "date": "April 15, 2024",
+        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=1200",
+        "readTime": "4 min read"
+    }
+]
